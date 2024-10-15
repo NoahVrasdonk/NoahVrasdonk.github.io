@@ -3,7 +3,7 @@
     display: grid;
     grid-template-areas:
       "header header"
-      " hero"
+      "hero"
       "sectionImage sectionText"
       "footer footer";
     grid-template-columns: 1fr;
