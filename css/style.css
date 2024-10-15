@@ -1,0 +1,141 @@
+/* hallo */
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      " hero"
+      "sectionImage sectionText"
+      "footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    height: 100vh;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #7DCFDA;
+  }
+    
+  header {
+    grid-area: header;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+  }
+
+  header img {
+    width: auto;
+    height: auto;
+    margin: 0 1em;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin: 0 1em;
+  }
+  
+  nav a {
+    color: #416788;
+    text-decoration: none;
+  }
+    
+  main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em;
+    padding: 1em;
+  }
+  
+  section {
+    background-color: #416788;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  section header {
+    margin-bottom: 1em;
+    display: grid;
+    grid-area: hero;
+  }
+  
+  section h2, section p, section a {
+    display: grid;
+    grid-area: sectionText;
+  }
+  
+  h1, h2 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  p {
+    margin-bottom: 1em;
+  }
+  
+  a {
+    border: 10px,  solid, #FDE12D;
+    border-radius: 15px;
+    background-color: #FDE12D;
+    color: #416788;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #23527c;
+  }
+  
+  section img {
+    display: grid;
+    grid-area: sectionImages;
+  }
+  
+
+    
+  footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+    
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-rows: 100px 2fr 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-rows: 100px 3fr 100px;
+    }
+  }
