@@ -54,7 +54,6 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  text-align: flex-end;
 }
 
 nav a {
@@ -145,9 +144,8 @@ a {
 }
 
 .homeanchor {
-  color: #F7F0F5;
   background-color: #F7F0F5;
-  border-color: #F7F0F5;
+  border-color: #f7f0f6;
 }
 
 a:hover {
