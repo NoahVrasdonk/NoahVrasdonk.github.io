@@ -1,0 +1,5 @@
+o	Student name: Noah Vrasdonk
+o	Student number: 730940
+o	Student class: INF1B
+o	GitHub Repository: NoahVrasdonk.
+o	GitHub Pages URL: your github pages URL* 
